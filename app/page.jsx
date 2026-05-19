@@ -41,22 +41,22 @@ const PortfolioWebsite = () => {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce dengan payment gateway integration',
-      tech: ['Next.js', 'TypeScript', 'Prisma', 'Stripe'],
-      image: '🛒',
+      title: 'My-Drive',
+      description: 'Cloud storage app dengan Firebase Auth, Cloudinary Storage, dan IndexedDB. Dual save system 45GB total capacity.',
+      tech: ['JavaScript', 'Firebase', 'Cloudinary', 'IndexedDB', 'HTML5', 'CSS3'],
+      image: '☁️',
       category: 'fullstack',
-      link: '#',
-      github: '#'
+      link: 'https://simpandata.netlify.app/',
+      github: 'https://github.com/Ariefnaufal67/drive'
     },
     {
-      title: 'AI Chat Application',
-      description: 'Real-time chat dengan AI integration menggunakan OpenAI',
-      tech: ['React', 'Node.js', 'Socket.io', 'OpenAI'],
-      image: '🤖',
-      category: 'fullstack',
-      link: '#',
-      github: '#'
+      title: 'Peringkas Teks AI',
+      description: 'Peringkas Teks dengan AI',
+      tech: ['HTML', 'CSS', 'JavaScript', 'OpenAI API'],
+      image: '📝',
+      category: 'frontend',
+      link: '/peringkas-teks.html',
+      github: 'https://github.com/Ariefnaufal67/peringkas-teks.git'
     },
     {
       title: 'Task Management App',
@@ -64,8 +64,8 @@ const PortfolioWebsite = () => {
       tech: ['Next.js', 'Tailwind', 'Firebase'],
       image: '✅',
       category: 'frontend',
-      link: '#',
-      github: '#'
+      link: 'https://taskmanagementpro.vercel.app/',
+      github: 'https://github.com/Ariefnaufal67/Task-Management'
     },
     {
       title: 'Weather Dashboard',
@@ -73,15 +73,6 @@ const PortfolioWebsite = () => {
       tech: ['React', 'Chart.js', 'API Integration'],
       image: '🌤️',
       category: 'frontend',
-      link: '#',
-      github: '#'
-    },
-    {
-      title: 'RESTful API',
-      description: 'Scalable REST API dengan authentication & authorization',
-      tech: ['Node.js', 'Express', 'MongoDB', 'JWT'],
-      image: '🔌',
-      category: 'backend',
       link: '#',
       github: '#'
     },
@@ -97,19 +88,19 @@ const PortfolioWebsite = () => {
   ];
 
   const skills = [
-    { name: 'React', level: 90, category: 'frontend' },
-    { name: 'Next.js', level: 85, category: 'frontend' },
+    { name: 'React', level: 70, category: 'frontend' },
+    { name: 'Next.js', level: 80, category: 'frontend' },
     { name: 'TypeScript', level: 80, category: 'language' },
-    { name: 'Tailwind CSS', level: 90, category: 'frontend' },
+    { name: 'Tailwind CSS', level: 75, category: 'frontend' },
     { name: 'Node.js', level: 85, category: 'backend' },
-    { name: 'MongoDB', level: 75, category: 'database' },
+    { name: 'Mysql', level: 80, category: 'database' },
     { name: 'PostgreSQL', level: 70, category: 'database' },
-    { name: 'Git', level: 85, category: 'tools' },
+    { name: 'Git', level: 86, category: 'tools' },
   ];
 
   const certificates = [
     {
-      title: 'Full Stack Web Development',
+      title: 'Supervised Machine Learning: Classification',
       provider: 'Coursera',
       issuer: 'Coursera',
       date: 'November 2025',
@@ -119,7 +110,7 @@ const PortfolioWebsite = () => {
       category: 'coursera'
     },
     {
-      title: 'Advanced Programming Course',
+      title: 'Exploratory Data Analysis for Machine Learning',
       provider: 'Coursera',
       issuer: 'Coursera',
       date: 'October 2025',
@@ -129,7 +120,7 @@ const PortfolioWebsite = () => {
       category: 'coursera'
     },
     {
-      title: 'Software Development Fundamentals',
+      title: 'Supervised Machine Learning: Regression',
       provider: 'Coursera',
       issuer: 'Coursera',
       date: 'November 2025',
@@ -139,7 +130,7 @@ const PortfolioWebsite = () => {
       category: 'coursera'
     },
     {
-      title: 'Web Development Specialization',
+      title: 'Introduction to Artificial Intelligence (AI)',
       provider: 'Coursera',
       issuer: 'Coursera - Arief',
       date: 'November 2025',
@@ -148,26 +139,28 @@ const PortfolioWebsite = () => {
       icon: '🌐',
       category: 'coursera'
     },
+   
     {
-      title: 'EF SET English Certificate',
-      provider: 'EF SET',
-      issuer: 'EF Standard English Test',
-      date: 'September 2025',
-      credentialId: 'C2 Proficient',
-      file: '/EF SET Certificate.pdf',
-      icon: '🌍',
-      category: 'language'
-    },
-    {
-      title: 'Professional Course Certification',
-      provider: 'Course Provider',
+      title: 'Introduction to Financial Literacy',
+      provider: 'Dicoding',
       issuer: 'Training Institution',
       date: 'December 2025',
       credentialId: '905_4026307_311225095',
-      file: '/sertifikat_course_905_4026307_311225095.pdf',
+      file: '/sertifikat_course_905_4026307_311225095452.pdf',
       icon: '📜',
-      category: 'other'
-    }
+      category: 'dicoding'
+    },
+
+    {
+      title: 'Belajar Dasar Cloud dan Gen AI di AWS',
+      provider: 'Dicoding',
+      issuer: 'Dicoding Indonesia x AWS',
+      date: 'Februari 2026',
+      credentialId: 'MRZMWKYJRPYQ',
+      file: '/sertifikat_course_251_4026307_200226144128.pdf',
+      icon: '☁️',
+      category: 'dicoding'
+}
   ];
 
   const filteredProjects = selectedFilter === 'all' 
@@ -214,7 +207,7 @@ const PortfolioWebsite = () => {
             <Terminal className={darkMode ? 'text-purple-400' : 'text-purple-600'} size={24} />
             <span className={`font-mono font-bold text-xl ${
               darkMode ? 'text-white' : 'text-gray-900'
-            }`}>{'<Dev/>'}</span>
+            }`}>{'Portofolio'}</span>
           </div>
           
           <div className="hidden md:flex gap-8">
@@ -271,7 +264,7 @@ const PortfolioWebsite = () => {
             {/* Terminal Content */}
             <div className="font-mono">
               <p className={darkMode ? 'text-green-400' : 'text-green-600'}>
-                <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>$</span> whoami
+                <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}></span> whoami
               </p>
               <h1 className={`text-5xl md:text-7xl font-bold my-6 ${
                 darkMode ? 'text-white' : 'text-gray-900'
@@ -288,8 +281,10 @@ const PortfolioWebsite = () => {
               <p className={`text-lg mb-8 max-w-2xl ${
                 darkMode ? 'text-gray-300' : 'text-gray-700'
               }`}>
-                Passionate about creating beautiful, functional, and user-friendly web applications. 
-                Specialized in modern JavaScript frameworks and full-stack development.
+                Perkenalkan Nama saya Arief Naufal Al Azmi, 
+                seorang Full Stack Developer. 
+                Saya memiliki beberapa keahlian dalam berbagai teknologi seperti React, Next.js, Node.js. 
+                Saya selalu bersemangat untuk belajar hal baru dan siap menghadapi tantangan dalam dunia pengembangan web Development.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -354,7 +349,7 @@ const PortfolioWebsite = () => {
             }`}>
               <Code className={`mb-4 ${darkMode ? 'text-purple-400' : 'text-purple-600'}`} size={32} />
               <h3 className={`text-2xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-                50+
+                3
               </h3>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
                 Projects Completed
@@ -369,7 +364,7 @@ const PortfolioWebsite = () => {
             }`}>
               <Briefcase className={`mb-4 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} size={32} />
               <h3 className={`text-2xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-                5+
+                0
               </h3>
               <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
                 Years Experience
@@ -556,7 +551,7 @@ const PortfolioWebsite = () => {
 
           {/* Filter */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {['all', 'coursera', 'language', 'other'].map((filter) => (
+            {['all', 'coursera', 'language', 'dicoding','other'].map((filter) => (
               <button
                 key={filter}
                 onClick={() => setSelectedCertFilter(filter)}
@@ -675,7 +670,7 @@ const PortfolioWebsite = () => {
                       ? 'bg-gray-900/50 border-gray-700 text-white focus:border-purple-500' 
                       : 'bg-white/50 border-gray-300 text-gray-900 focus:border-purple-500'
                   }`}
-                  placeholder="Your name"
+                  placeholder="Arief Naufal Al Azmi"
                 />
               </div>
 
@@ -692,7 +687,7 @@ const PortfolioWebsite = () => {
                       ? 'bg-gray-900/50 border-gray-700 text-white focus:border-purple-500' 
                       : 'bg-white/50 border-gray-300 text-gray-900 focus:border-purple-500'
                   }`}
-                  placeholder="your.email@example.com"
+                  placeholder="azminaufalarief54@gmail.com"
                 />
               </div>
 
@@ -725,7 +720,7 @@ const PortfolioWebsite = () => {
             {/* Social Links */}
             <div className="flex justify-center gap-6 mt-8 pt-8 border-t border-gray-700">
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/Ariefnaufal67" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`p-3 rounded-full transition-all hover:scale-110 ${
@@ -737,7 +732,7 @@ const PortfolioWebsite = () => {
                 <Github className="text-white" size={24} />
               </a>
               <a 
-                href="https://linkedin.com/in/yourusername" 
+                href="https://www.linkedin.com/in/arief-naufal-35469a211/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`p-3 rounded-full transition-all hover:scale-110 ${
