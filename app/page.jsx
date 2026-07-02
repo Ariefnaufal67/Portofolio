@@ -99,10 +99,11 @@ const PortfolioWebsite = () => {
   ];
 
   const certificates = [
+    // === IBM (via Coursera) ===
     {
       title: 'Supervised Machine Learning: Classification',
       provider: 'Coursera',
-      issuer: 'Coursera',
+      issuer: 'IBM',
       date: 'November 2025',
       credentialId: '1EL0SUFYTZE5',
       file: '/Coursera 1EL0SUFYTZE5.pdf',
@@ -110,47 +111,167 @@ const PortfolioWebsite = () => {
       category: 'coursera'
     },
     {
-      title: 'Exploratory Data Analysis for Machine Learning',
-      provider: 'Coursera',
-      issuer: 'Coursera',
-      date: 'October 2025',
-      credentialId: 'CYPLBRLW9MX9',
-      file: '/Coursera CYPLBRLW9MX9.pdf',
-      icon: '💻',
-      category: 'coursera'
-    },
-    {
       title: 'Supervised Machine Learning: Regression',
       provider: 'Coursera',
-      issuer: 'Coursera',
+      issuer: 'IBM',
       date: 'November 2025',
       credentialId: 'SL2HRSMFSW40',
       file: '/Coursera SL2HRSMFSW40.pdf',
-      icon: '⚙️',
+      icon: '📈',
+      category: 'coursera'
+    },
+    {
+      title: 'Exploratory Data Analysis for Machine Learning',
+      provider: 'Coursera',
+      issuer: 'IBM',
+      date: 'October 2025',
+      credentialId: 'CYPLBRLW9MX9',
+      file: '/Coursera CYPLBRLW9MX9.pdf',
+      icon: '📊',
       category: 'coursera'
     },
     {
       title: 'Introduction to Artificial Intelligence (AI)',
       provider: 'Coursera',
-      issuer: 'Coursera - Arief',
+      issuer: 'IBM',
       date: 'November 2025',
-      credentialId: '4513_15048',
+      credentialId: 'B5V5UTW2R15W',
       file: '/Coursera_4513_15048_Arief.pdf',
+      icon: '🤖',
+      category: 'coursera'
+    },
+    {
+      title: 'Introduction to Software, Programming, and Databases',
+      provider: 'Coursera',
+      issuer: 'IBM',
+      date: 'April 2026',
+      credentialId: '88OJVNM3RIZJ',
+      file: '/Coursera 88OJVNM3RIZJ.pdf',
+      icon: '💻',
+      category: 'coursera'
+    },
+    {
+      title: 'Introduction to Hardware and Operating Systems',
+      provider: 'Coursera',
+      issuer: 'IBM',
+      date: 'April 2026',
+      credentialId: 'ES1N84MMSMZZ',
+      file: '/Coursera ES1N84MMSMZZ.pdf',
+      icon: '💾',
+      category: 'coursera'
+    },
+    {
+      title: 'Introduction to Networking and Storage',
+      provider: 'Coursera',
+      issuer: 'IBM',
+      date: 'April 2026',
+      credentialId: 'TMLYPUTD3OMK',
+      file: '/Coursera TMLYPUTD3OMK.pdf',
       icon: '🌐',
       category: 'coursera'
     },
-   
     {
-      title: 'Introduction to Financial Literacy',
+      title: 'Introduction to Cloud Computing',
+      provider: 'Coursera',
+      issuer: 'IBM',
+      date: 'April 2026',
+      credentialId: 'HS01MW3YPCIC',
+      file: '/Coursera HS01MW3YPCIC.pdf',
+      icon: '☁️',
+      category: 'coursera'
+    },
+    {
+      title: 'Introduction to Cybersecurity Essentials',
+      provider: 'Coursera',
+      issuer: 'IBM',
+      date: 'April 2026',
+      credentialId: 'O5SQSYTUNXMG',
+      file: '/Coursera O5SQSYTUNXMG.pdf',
+      icon: '🛡️',
+      category: 'coursera'
+    },
+    {
+      title: 'Introduction to Cybersecurity Careers',
+      provider: 'Coursera',
+      issuer: 'IBM',
+      date: 'April 2026',
+      credentialId: 'H4D7MSYXWKYI',
+      file: '/Coursera H4D7MSYXWKYI.pdf',
+      icon: '🕵️',
+      category: 'coursera'
+    },
+    // === ISC2 (via Coursera) ===
+    {
+      title: 'Security Principles',
+      provider: 'Coursera',
+      issuer: 'ISC2',
+      date: 'April 2026',
+      credentialId: '8URAOOZWHN2Y',
+      file: '/Coursera 8URAOOZWHN2Y.pdf',
+      icon: '🔐',
+      category: 'coursera'
+    },
+    {
+      title: 'Access Control Concepts',
+      provider: 'Coursera',
+      issuer: 'ISC2',
+      date: 'April 2026',
+      credentialId: '0RQSWIWG6NXS',
+      file: '/Coursera 0RQSWIWG6NXS.pdf',
+      icon: '🔑',
+      category: 'coursera'
+    },
+    {
+      title: 'Network Security',
+      provider: 'Coursera',
+      issuer: 'ISC2',
+      date: 'April 2026',
+      credentialId: '2KPXF8Z3B60L',
+      file: '/Coursera 2KPXF8Z3B60L.pdf',
+      icon: '🌐',
+      category: 'coursera'
+    },
+    {
+      title: 'Incident Response, BC, and DR Concepts',
+      provider: 'Coursera',
+      issuer: 'ISC2',
+      date: 'April 2026',
+      credentialId: '0A0IQY7AF7T4',
+      file: '/Coursera 0A0IQY7AF7T4.pdf',
+      icon: '🚨',
+      category: 'coursera'
+    },
+    // === Dicoding ===
+    {
+      title: 'Belajar Dasar Pemrograman Web',
       provider: 'Dicoding',
-      issuer: 'Training Institution',
-      date: 'December 2025',
-      credentialId: '905_4026307_311225095',
-      file: '/sertifikat_course_905_4026307_311225095452.pdf',
+      issuer: 'Dicoding Indonesia',
+      date: 'Juni 2026',
+      credentialId: 'KEXLQDVORPG2',
+      file: '/sertifikat_course_123_4026307_190626130127.pdf',
+      icon: '🌐',
+      category: 'dicoding'
+    },
+    {
+      title: 'Belajar Dasar Pemrograman JavaScript',
+      provider: 'Dicoding',
+      issuer: 'Dicoding Indonesia',
+      date: 'Juni 2026',
+      credentialId: 'EYX4Q3V2WPDL',
+      file: '/sertifikat_course_256_4026307_300626183834.pdf',
       icon: '📜',
       category: 'dicoding'
     },
-
+    {
+      title: 'Belajar Membuat Front-End Web untuk Pemula',
+      provider: 'Dicoding',
+      issuer: 'Dicoding Indonesia',
+      date: 'Juni 2026',
+      credentialId: '81P2OYL5QZOY',
+      file: '/sertifikat_course_315_4026307_300626221035.pdf',
+      icon: '🎨',
+      category: 'dicoding'
+    },
     {
       title: 'Belajar Dasar Cloud dan Gen AI di AWS',
       provider: 'Dicoding',
@@ -160,7 +281,17 @@ const PortfolioWebsite = () => {
       file: '/sertifikat_course_251_4026307_200226144128.pdf',
       icon: '☁️',
       category: 'dicoding'
-}
+    },
+    {
+      title: 'Introduction to Financial Literacy',
+      provider: 'Dicoding',
+      issuer: 'Dicoding Indonesia',
+      date: 'Desember 2025',
+      credentialId: '1OP8J8VVVPQK',
+      file: '/sertifikat_course_905_4026307_311225095452.pdf',
+      icon: '💰',
+      category: 'dicoding'
+    }
   ];
 
   const filteredProjects = selectedFilter === 'all' 
@@ -551,7 +682,7 @@ const PortfolioWebsite = () => {
 
           {/* Filter */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {['all', 'coursera', 'language', 'dicoding','other'].map((filter) => (
+            {['all', 'coursera', 'dicoding'].map((filter) => (
               <button
                 key={filter}
                 onClick={() => setSelectedCertFilter(filter)}
