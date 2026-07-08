@@ -419,22 +419,29 @@ const PortfolioWebsite = () => {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <button className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 ${
-                  darkMode 
-                    ? 'bg-purple-600 hover:bg-purple-700 text-white' 
-                    : 'bg-purple-600 hover:bg-purple-700 text-white'
-                }`}>
+                <a
+                  href="/CV_Arief_Naufal_Al_Azmi.pdf"
+                  download
+                  className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 ${
+                    darkMode 
+                      ? 'bg-purple-600 hover:bg-purple-700 text-white' 
+                      : 'bg-purple-600 hover:bg-purple-700 text-white'
+                  }`}
+                >
                   <Download size={20} />
                   Download CV
-                </button>
-                <button className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all border-2 ${
-                  darkMode 
-                    ? 'border-purple-400 text-purple-400 hover:bg-purple-400/10' 
-                    : 'border-purple-600 text-purple-600 hover:bg-purple-100'
-                }`}>
+                </a>
+                <a
+                  href="#contact"
+                  className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all border-2 ${
+                    darkMode 
+                      ? 'border-purple-400 text-purple-400 hover:bg-purple-400/10' 
+                      : 'border-purple-600 text-purple-600 hover:bg-purple-100'
+                  }`}
+                >
                   <Mail size={20} />
                   Contact Me
-                </button>
+                </a>
               </div>
             </div>
           </div>
