@@ -799,8 +799,8 @@ const PortfolioWebsite = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen px-6 py-20">
-        <div className="max-w-4xl mx-auto">
+      <section id="contact" className="min-h-screen px-6 py-20 flex items-center">
+        <div className="max-w-4xl mx-auto w-full">
           <h2 className={`text-4xl md:text-5xl font-bold mb-8 text-center ${
             darkMode ? 'text-white' : 'text-gray-900'
           }`}>
@@ -817,102 +817,84 @@ const PortfolioWebsite = () => {
               ? 'bg-gray-800/40 border-gray-700/50' 
               : 'bg-white/40 border-white/50'
           }`}>
-            <form className="space-y-6">
-              <div>
-                <label className={`block mb-2 font-semibold ${
-                  darkMode ? 'text-white' : 'text-gray-900'
-                }`}>
-                  Name
-                </label>
-                <input
-                  type="text"
-                  className={`w-full px-4 py-3 rounded-lg outline-none transition-all border-2 ${
-                    darkMode 
-                      ? 'bg-gray-900/50 border-gray-700 text-white focus:border-sky-500' 
-                      : 'bg-white/50 border-gray-300 text-gray-900 focus:border-sky-500'
-                  }`}
-                  placeholder="Arief Naufal Al Azmi"
-                />
-              </div>
-
-              <div>
-                <label className={`block mb-2 font-semibold ${
-                  darkMode ? 'text-white' : 'text-gray-900'
-                }`}>
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className={`w-full px-4 py-3 rounded-lg outline-none transition-all border-2 ${
-                    darkMode 
-                      ? 'bg-gray-900/50 border-gray-700 text-white focus:border-sky-500' 
-                      : 'bg-white/50 border-gray-300 text-gray-900 focus:border-sky-500'
-                  }`}
-                  placeholder="azminaufalarief54@gmail.com"
-                />
-              </div>
-
-              <div>
-                <label className={`block mb-2 font-semibold ${
-                  darkMode ? 'text-white' : 'text-gray-900'
-                }`}>
-                  Message
-                </label>
-                <textarea
-                  rows={5}
-                  className={`w-full px-4 py-3 rounded-lg outline-none transition-all border-2 ${
-                    darkMode 
-                      ? 'bg-gray-900/50 border-gray-700 text-white focus:border-sky-500' 
-                      : 'bg-white/50 border-gray-300 text-gray-900 focus:border-sky-500'
-                  }`}
-                  placeholder="Tell me about your project..."
-                />
-              </div>
-
-              <button className={`w-full py-4 rounded-lg font-semibold transition-all transform hover:scale-105 ${
+            {/* Status Badge */}
+            <div className="flex justify-center mb-8">
+              <span className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold ${
                 darkMode 
-                  ? 'bg-sky-600 hover:bg-sky-700 text-white' 
-                  : 'bg-sky-600 hover:bg-sky-700 text-white'
+                  ? 'bg-green-500/15 text-green-400' 
+                  : 'bg-green-100 text-green-700'
               }`}>
-                Send Message
-              </button>
-            </form>
+                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                Open to Work
+              </span>
+            </div>
 
-            {/* Social Links */}
-            <div className="flex justify-center gap-6 mt-8 pt-8 border-t border-gray-700">
-              <a 
-                href="https://github.com/Ariefnaufal67" 
+            {/* Contact Method Cards */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=azminaufalanef54@gmail.com&su=Halo%20Arief!&body=Halo%20Arief%2C%20saya%20menghubungi%20dari%20portofolio%20website%20Anda."
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`p-3 rounded-full transition-all hover:scale-110 ${
+                className={`flex flex-col items-center gap-2 p-5 rounded-xl border transition-all hover:scale-105 ${
                   darkMode 
-                    ? 'bg-gray-700 hover:bg-sky-600' 
-                    : 'bg-gray-200 hover:bg-sky-600'
+                    ? 'bg-white/5 border-purple-400/30 hover:bg-white/10' 
+                    : 'bg-white/60 border-purple-300 hover:bg-white/80'
                 }`}
               >
-                <Github className="text-white" size={24} />
+                <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center">
+                  <Mail className="text-white" size={18} />
+                </div>
+                <span className={`text-sm font-semibold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Gmail</span>
               </a>
-              <a 
-                href="https://www.linkedin.com/in/arief-naufal-35469a211/" 
+
+              <a
+                href="https://wa.me/6285819550578?text=Halo%20Arief%2C%20saya%20menghubungi%20dari%20portofolio%20website%20Anda.%20Saya%20tertarik%20untuk%20diskusi%20proyek."
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`p-3 rounded-full transition-all hover:scale-110 ${
+                className={`flex flex-col items-center gap-2 p-5 rounded-xl border transition-all hover:scale-105 ${
                   darkMode 
-                    ? 'bg-gray-700 hover:bg-blue-600' 
-                    : 'bg-gray-200 hover:bg-blue-600'
+                    ? 'bg-white/5 border-purple-400/30 hover:bg-white/10' 
+                    : 'bg-white/60 border-purple-300 hover:bg-white/80'
                 }`}
               >
-                <Linkedin className="text-white" size={24} />
+                <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="white">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.05 2h-.01zm5.79 14.07c-.24.68-1.4 1.3-1.93 1.38-.49.08-1.11.11-1.79-.11-.41-.13-.94-.3-1.62-.59-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94s.72-2.09.98-2.38c.26-.29.56-.36.75-.36.19 0 .38 0 .54.01.17.01.41-.07.64.49.24.57.81 1.97.88 2.11.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.86-1.06.18-.28.36-.23.6-.14.24.09 1.55.73 1.82.86.27.14.44.2.51.32.07.11.07.65-.17 1.33z"/>
+                  </svg>
+                </div>
+                <span className={`text-sm font-semibold ${darkMode ? 'text-white' : 'text-gray-900'}`}>WhatsApp</span>
               </a>
-              <a 
-                href="mailto:azminaufalanef54@gmail.com"
-                className={`p-3 rounded-full transition-all hover:scale-110 ${
+
+              <a
+                href="https://www.linkedin.com/in/arief-naufal-35469a211/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex flex-col items-center gap-2 p-5 rounded-xl border transition-all hover:scale-105 ${
                   darkMode 
-                    ? 'bg-gray-700 hover:bg-red-600' 
-                    : 'bg-gray-200 hover:bg-red-600'
+                    ? 'bg-white/5 border-purple-400/30 hover:bg-white/10' 
+                    : 'bg-white/60 border-purple-300 hover:bg-white/80'
                 }`}
               >
-                <Mail className="text-white" size={24} />
+                <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
+                  <Linkedin className="text-white" size={18} />
+                </div>
+                <span className={`text-sm font-semibold ${darkMode ? 'text-white' : 'text-gray-900'}`}>LinkedIn</span>
+              </a>
+
+              <a
+                href="https://github.com/Ariefnaufal67"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex flex-col items-center gap-2 p-5 rounded-xl border transition-all hover:scale-105 ${
+                  darkMode 
+                    ? 'bg-white/5 border-purple-400/30 hover:bg-white/10' 
+                    : 'bg-white/60 border-purple-300 hover:bg-white/80'
+                }`}
+              >
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center ${darkMode ? 'bg-gray-600' : 'bg-gray-800'}`}>
+                  <Github className="text-white" size={18} />
+                </div>
+                <span className={`text-sm font-semibold ${darkMode ? 'text-white' : 'text-gray-900'}`}>GitHub</span>
               </a>
             </div>
           </div>
